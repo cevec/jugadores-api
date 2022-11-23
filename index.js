@@ -16,7 +16,7 @@ app.get('/jugadores', (req, res) => {
         return posts[key];
     });
 
-    res.send(values);
+    res.send({data: values});
 });
 
 app.get('/jugadores/:id', (req, res) => {
